@@ -1,4 +1,4 @@
 how to activate venv (forgot how to)
 
-python3 -m venv venv
+python -m venv venv
 source venv/Scripts/activate
