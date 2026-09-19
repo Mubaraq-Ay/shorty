@@ -2,3 +2,5 @@ how to activate venv (forgot how to)
 
 python -m venv venv
 source venv/Scripts/activate
+
+sqlite is a database engine that stores data in a file
