@@ -21,7 +21,6 @@ for _ in range(6):
 short_code = ''.join(char)
 print(short_code)
 
- 
 conn = sqlite3.connect('url.db')
 cursor = conn.cursor()
 
