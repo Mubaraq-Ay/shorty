@@ -4,3 +4,21 @@ python -m venv venv
 source venv/Scripts/activate
 
 sqlite is a database engine that stores data in a file
+
+
+starting python's http.server in the terminal.
+
+python -m http.server
+
+to find local ip address, check network settings using:
+ipconfig - (windows)
+
+if the default port number is unavailable, you can set the port-
+python -m http.server 8080
+
+For security reasons, you may restrict access to your HTTP server 
+by running it on an address belonging to the virtual loopback interface 
+or localhost, which no one except you will be able to speak to. 
+You can bind a specific network interface or IP address by using the -b option:
+
+python -m http.server -b 127.0.0.42 8080
