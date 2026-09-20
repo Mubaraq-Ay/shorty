@@ -2,7 +2,6 @@ import urllib.parse
 import secrets
 import sqlite3
 
-
 print("""
 ----- SHORTY -----
 
@@ -11,7 +10,6 @@ Select an option:
 1. Shorten URL
 2. Exit
 """)
-
 
 choice = input("Select an option: ")
 
@@ -28,7 +26,6 @@ if choice == "1":
 
 
     characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
-
 
     def generate_code():
         char = []
@@ -53,7 +50,6 @@ if choice == "1":
 
     conn.commit()
 
-
     while True:
         short_code = generate_code()
 
@@ -69,20 +65,17 @@ if choice == "1":
 
         break
 
-
     cursor.execute("""
         INSERT INTO urls(original_url, short_code)
         VALUES (?, ?)
     """, (user_url, short_code))
 
     conn.commit()
-
+ 
     print(short_code)
-
 
 elif choice == "2":
     print("Okay, bye.")
-
 
 else:
     print("Invalid option.")
