@@ -67,7 +67,7 @@ HTTP 404
 ### 1. Clone the repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/Mubaraq-Ay/shorty.git
 cd url-shortner
 ```
 
