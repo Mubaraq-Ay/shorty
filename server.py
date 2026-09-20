@@ -23,7 +23,7 @@ class Handler(BaseHTTPRequestHandler):
             self.end_headers()
         elif result is None:
             self.send_response(404)
-            self.end_headers()
+            self.end_headers() 
             print('URL not found.')
 
 server = HTTPServer(("localhost", 8000), Handler)
