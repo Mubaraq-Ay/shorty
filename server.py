@@ -22,9 +22,9 @@ class Handler(BaseHTTPRequestHandler):
             self.send_header("Location", result[0])
             self.end_headers()
         elif result is None:
-            print('not found.')
-   
-
+            self.send_response(404)
+            self.end_headers()
+            print('URL not found.')
 
 server = HTTPServer(("localhost", 8000), Handler)
 server.serve_forever()
